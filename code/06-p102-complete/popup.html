@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Moodle Auto Login</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 15px;
+      font-family: sans-serif;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    label {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Moodle Auto Login</h2>
+  <label>
+    <input type="checkbox" id="enabled" disabled>
+    自動ログインを有効にする
+  </label>
+  <p id="status">設定を読み込み中...</p>
+  <script src="popup.js"></script>
+</body>
+</html>

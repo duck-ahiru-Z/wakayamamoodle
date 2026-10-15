@@ -1,0 +1,12 @@
+# Windows / VS Code
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Private or local records
+*.log
+.env
+.env.*
+*.har
+*cookie*
+*token*

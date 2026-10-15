@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Moodle Auto Login",
+  "version": "1.0.0",
+  "description": "和歌山大学Moodleのログイン操作を自動化する拡張機能",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://moodle2026.wakayama-u.ac.jp/2026/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
