@@ -8,7 +8,7 @@ AppLii 勉強会用：Chrome拡張機能ハンズオンの**スライド対応�
 
 ## まず見るもの
 
-- [参加者向け：手順書](docs/participant-guide.md) — 最初の準備から、各スライドでの作業・確認まで
+- [参加者向け：完全スライド対応ハンズオンガイド](docs/participant-guide.md) — p1〜107の索引、全コードブロック、操作方法、動作確認まで
 - [スライド番号 → ソースコード早見表](docs/slide-index.md) — 迷ったらここ
 - [困ったときの解決方法](docs/troubleshooting.md) — 読み込み・Console・ログイン・再試行
 - [講師向け：2日間の進行メモ](docs/facilitator.md) — 進み具合に応じた区切り方
