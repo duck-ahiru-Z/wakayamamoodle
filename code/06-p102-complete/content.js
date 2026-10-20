@@ -19,7 +19,7 @@ async function autoLogin() {
       'a[href$="/login/index.php"]'
     );
 
-    // ボタンがなければ記録を初期化
+    // リンクがなければ記録を初期化
     if (!loginButton) {
       sessionStorage.removeItem(firstKey);
       sessionStorage.removeItem(secondKey);
@@ -40,17 +40,21 @@ async function autoLogin() {
     path === "/2026/login/index.php" ||
     path === "/2026/login/index_form.html"
   ) {
-    const universityButton = document.querySelector(
-      'a[href$="/auth/oidc/"]'
-    );
+    // 実画面では大学IDログインがボタンとして表示される
+    const universityButton = Array.from(
+      document.querySelectorAll("button")
+    ).find((button) => button.textContent.includes("和歌山大学ID"));
+
     if (!universityButton) {
       console.log("大学IDログインボタンがありません");
       return;
     }
+
     if (sessionStorage.getItem(secondKey) === "yes") {
       console.log("大学IDログイン操作は実行済み");
       return;
     }
+
     sessionStorage.setItem(secondKey, "yes");
     universityButton.click();
   }
